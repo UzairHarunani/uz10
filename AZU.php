@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php
 
 <html>
 <head>
@@ -167,3 +167,5 @@ For more information please contact 0756444350.
 <a href="Uzairs Help.html">Uzair's Help</a>
 </body>
 </html>
+
+?>

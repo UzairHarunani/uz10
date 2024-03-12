@@ -93,7 +93,8 @@ Plastic crafts:
 <hr size="5px" color="orange">
 
 <section class="software help-selection">
-<p>What help do you need with software?
+<p>What help do you need with software?</p>
+ <br>
 <label for="microsoft problems">Microsoft Problems</label>
   <input id="microsoft problems" name="software help" type="checkbox" value="microsoft problems">
   <br>

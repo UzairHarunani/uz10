@@ -48,7 +48,7 @@ document.body.addEventListener('keydown', (event) => {
    playGame('Paper');
 } else if (event.key === 's') {
  playGame('Scissors');
-} else if (event.key === 'Delete') {
+} else if (event.key === 'Escape') {
   resetGame();
 } else if (event.key === 'a') {
   autoPlay();

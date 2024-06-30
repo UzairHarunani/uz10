@@ -48,10 +48,12 @@ document.body.addEventListener('keydown', (event) => {
    playGame('Paper');
 } else if (event.key === 's') {
  playGame('Scissors');
-} else if (event.key === 'Escape') {
+} else if (event.key === 'Delete') {
   resetGame();
 } else if (event.key === 'a') {
   autoPlay();
+} else if (event.key === 'Escape') {
+  clearInterval(intervalId);
 }
 });
 

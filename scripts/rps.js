@@ -31,8 +31,6 @@ function autoPlay() {
     isAutoPlaying = false;
   }
   
-function changeButtonText() {
-  
   const buttonElement = document.querySelector('.auto');
 
   if (buttonElement.innerText === 'Auto Play') {
@@ -40,7 +38,6 @@ function changeButtonText() {
   } else {
     buttonElement.innerHTML = 'Auto Play';
   }
-}
 }
 
 document.body.addEventListener('keydown', (event) => {
@@ -56,7 +53,7 @@ document.body.addEventListener('keydown', (event) => {
   autoPlay();
 } else if (event.key === 'Escape') {
   clearInterval(intervalId);
-  changeButtonText();
+  autoPlay();
 }
 });
 

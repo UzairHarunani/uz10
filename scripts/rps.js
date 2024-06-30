@@ -51,9 +51,6 @@ document.body.addEventListener('keydown', (event) => {
   resetGame();
 } else if (event.key === 'a') {
   autoPlay();
-} else if (event.key === 'Escape') {
-  clearInterval(intervalId);
-  autoPlay();
 }
 });
 

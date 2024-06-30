@@ -122,7 +122,7 @@ Computer:
 
 function updateScoreElement() {
   document.querySelector('.js-score')
-    .innerHTML = `Wins: ${score.wins},<br><br><br><br><br>Losses: ${score.losses},<br><br><br><br><br>Ties: ${score.ties}`;
+    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
 
 function pickComputerMove() {

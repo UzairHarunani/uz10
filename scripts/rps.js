@@ -125,10 +125,10 @@ function updateScoreElement() {
     .innerHTML = `Wins: ${score.wins}`;
   
   document.querySelector('.js-score-losses')
-    .innerHTML = `Wins: ${score.losses}`;
+    .innerHTML = `Losses: ${score.losses}`;
   
   document.querySelector('.js-score-ties')
-    .innerHTML = `Wins: ${score.ties}`;
+    .innerHTML = `Ties: ${score.ties}`;
 }
 
 function pickComputerMove() {

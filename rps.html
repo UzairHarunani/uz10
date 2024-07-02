@@ -27,13 +27,7 @@
     <p class="js-score-ties score"></p>
 
     <button onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updateScoreElement();
-      document.querySelector('.js-result').innerHTML = '';
-      document.querySelector('.js-moves').innerHTML = '';
+        resetGame();
     " class="reset">Reset Score</button>
     
     <button class="auto" onclick="

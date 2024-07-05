@@ -1,12 +1,12 @@
 body{
-  background-color: rgb(25,25,25);
+  background-color: rgb(30,35,40);
   color: white;
-  font-family: Arial;
-  font-size: 30px;
 }
 
 .title{
   font-weight: bold;
+  font-size: 30px;
+  font-family: Algerian;
 }
 
 .rps-emoji{
@@ -27,10 +27,12 @@ body{
   font-size: 25px;
   font-weight: bold;
   margin-top: 50px;
+  font-family: Roboto;
 }
 
 .score{
   margin-bottom: 30px;
+  font-family: Roboto;
 }
 .auto,
 .reset{
@@ -42,4 +44,5 @@ body{
   width: 120px;
   height: 60px;
   font-weight: bold;
+  font-family: Helvetica;
 }

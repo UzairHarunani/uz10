@@ -122,8 +122,12 @@ Computer:
 }
 
 function updateScoreElement() {
-  document.querySelector('.js-score-wins, .js-score-losses, .js-score-ties')
-    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
+  document.querySelector('.js-score-wins')
+    .innerHTML = `Wins: ${score.wins};
+    document.querySelector('.js-score-losses')
+    .innerHTML = `Losses: ${score.losses};
+  document.querySelector('.js-score-ties')
+    .innerHTML = `Ties: ${score.ties}
 }
 
 function pickComputerMove() {

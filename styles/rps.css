@@ -33,13 +33,13 @@ body{
 .score{
   margin-bottom: 30px;
   font-family: Roboto;
-  font-size: 25px;
+  font-size: 30px;
 }
 .auto,
 .reset{
   background-color: white;
   border: none;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 15px;
   cursor: pointer;
   width: 120px;

@@ -27,12 +27,13 @@ body{
   font-size: 25px;
   font-weight: bold;
   margin-top: 50px;
-  font-family: Roboto;
+  font-family: Helvetica;
 }
 
 .score{
   margin-bottom: 30px;
   font-family: Roboto;
+  font-size: 25px;
 }
 .auto,
 .reset{

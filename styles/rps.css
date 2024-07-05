@@ -30,6 +30,12 @@ body{
   font-family: Times New Roman;
 }
 
+.js-moves{
+  font-family: Arial Rounded MT Bold;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .score{
   margin-bottom: 30px;
   font-family: Berlin Sans FB;

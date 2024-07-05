@@ -122,7 +122,7 @@ Computer:
 }
 
 function updateScoreElement() {
-  document.querySelector('.js-score')
+  document.querySelector('.js-score-wins, .js-score-losses, .js-score-ties')
     .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 }
 

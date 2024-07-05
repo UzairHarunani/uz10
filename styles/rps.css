@@ -15,7 +15,7 @@ body{
 
 .rps-button{
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px dotted white;
   width: 150px;
   height: 150px;
   border-radius: 80px;

@@ -1,12 +1,12 @@
 body{
   background-color: rgb(25,25,25);
   color: white;
-  font-family: Arial;
   font-size: 30px;
 }
 
 .title{
   font-weight: bold;
+  font-family: Algerian;
 }
 
 .rps-emoji{
@@ -15,7 +15,7 @@ body{
 
 .rps-button{
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px dotted white;
   width: 150px;
   height: 150px;
   border-radius: 80px;
@@ -23,14 +23,17 @@ body{
   cursor: pointer;
 }
 
+.js-moves,
 .result{
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 50px;
+  font-family: Times New Roman;
 }
 
 .score{
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 .auto,
 .reset{
@@ -42,4 +45,5 @@ body{
   width: 120px;
   height: 60px;
   font-weight: bold;
+  font-family: Comic Sans MS;
 }

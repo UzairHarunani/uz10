@@ -34,6 +34,7 @@ body{
 .score{
   margin-top: 60px;
   margin-bottom: 20px;
+  font-family: Berlin Sans FB;
 }
 .auto,
 .reset{

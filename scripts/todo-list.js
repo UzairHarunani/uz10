@@ -49,7 +49,9 @@ function addTodo() {
   
 
       
-  inputElement.value = '';
+  nameInputElement.value = '';
+  dateInputElement.value = '';
+  timeInputElement.value = '';
 
   
   renderTodoList();

@@ -44,7 +44,8 @@ function addTodo() {
     //name: name,
     //dueDate: dueDate,
     name,
-    dueDate
+    dueDate,
+    dueTime
       });
   
 

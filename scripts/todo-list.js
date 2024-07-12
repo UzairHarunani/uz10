@@ -30,13 +30,13 @@ document.querySelector('.js-todo-list')
 }
 function addTodo() {
   const nameInputElement = document.querySelector('.js-name-input');
-  const name = inputElement.value;
+  const name = nameInputElement.value;
 
   const dateInputElement = document.querySelector('.js-date-input');
   const dueDate = dateInputElement.value;
 
-  const dateInputElement = document.querySelector('.js-date-input');
-  const dueTime = dateInputElement.value;
+  const timeInputElement = document.querySelector('.js-time-input');
+  const dueTime = timeInputElement.value;
 
   localStorage.setItem('todolist', JSON.stringify(todoList));
  

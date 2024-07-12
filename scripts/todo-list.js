@@ -17,6 +17,7 @@ for (let i = 0; i < todoList.length; i++) {
   <button onclick="
       todoList.splice(${i}, 1);
       renderTodoList();
+      localStorage.removeItem('todolist')
   " class="delete-todo-button">Delete</button>
   `;
   todoListHTML += html;
@@ -32,6 +33,8 @@ function addTodo() {
 
   const dateInputElement = document.querySelector('.js-date-input');
   const dueDate = dateInputElement.value;
+
+  localStorage.setItem('todolist', JSON.stringify(todoList));
  
   todoList.push({
     //name: name,

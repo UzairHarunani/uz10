@@ -1,7 +1,6 @@
 let todoList = [];
 localStorage.removeItem('todoList');
 todoList = JSON.parse(localStorage.getItem('todolist'));
-alert(todoList.length);
 renderTodoList();
 
 function renderTodoList() {

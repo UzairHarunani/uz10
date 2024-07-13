@@ -2,7 +2,6 @@ body {
   font-family: arial;
 }
 
-.todo-grid,
 .todo-input-grid {
   display: grid;
   grid-template-columns: 200px 150px 100px 90px;
@@ -10,6 +9,15 @@ body {
   row-gap: 10px;
   align-items: center;
 }
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px 50px 90px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
 
 .todo-input-grid {
   margin-bottom: 10px;

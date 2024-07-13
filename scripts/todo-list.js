@@ -39,8 +39,6 @@ function addTodo() {
 
   const timeInputElement = document.querySelector('.js-time-input');
   const dueTime = timeInputElement.value;
-
-  localStorage.setItem('todolist', JSON.stringify(todoList));
  
   todoList.push({
     //name: name,
@@ -50,7 +48,7 @@ function addTodo() {
     dueTime
       });
   
-
+localStorage.setItem('todolist', JSON.stringify(todoList));
       
   nameInputElement.value = '';
   dateInputElement.value = '';

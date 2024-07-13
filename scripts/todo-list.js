@@ -1,6 +1,7 @@
 let todoList = [];
-localStorage.removeItem('todoList');
+
 todoList = JSON.parse(localStorage.getItem('todolist'));
+
 renderTodoList();
 
 function renderTodoList() {
@@ -21,7 +22,7 @@ for (let i = 0; i < todoList.length; i++) {
   <button onclick="
       todoList.splice(${i}, 1);
       renderTodoList();
-      JSON.parse(localStorage.removeItem('todolist'))
+      localStorage.removeItem('todolist')
   " class="delete-todo-button">Delete</button>
   `;
   todoListHTML += html;

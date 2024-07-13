@@ -1,6 +1,6 @@
 let todoList = [];
 
-todoList = JSON.parse(localStorage.getItem('todolist'));
+todoList = localStorage.getItem('todolist');
 
 renderTodoList();
 

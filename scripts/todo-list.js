@@ -7,7 +7,6 @@ let todoListHTML = '';
 
   if (localStorage.getItem('todolist') !== null) {
      todoList = JSON.parse(localStorage.getItem('todolist'));
-    alert(todoList.length);
   }
 
 for (let i = 0; i < todoList.length; i++) {

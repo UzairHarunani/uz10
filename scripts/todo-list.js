@@ -14,6 +14,8 @@ for (let i = 0; i < todoList.length; i++) {
   <div>${name}</div>
   <div>${dueDate}</div>
   <div>${dueTime}</div>
+
+  <input type="checkbox">
  
   <button onclick="
       todoList.splice(${i}, 1);

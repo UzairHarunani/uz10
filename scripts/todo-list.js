@@ -1,4 +1,4 @@
-const todoList = [];
+let todoList = [];
 
 renderTodoList();
 

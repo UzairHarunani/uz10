@@ -19,6 +19,7 @@ for (let i = 0; i < todoList.length; i++) {
   <div>${dueDate}</div>
   <div>${dueTime}</div>
   For: &nbsp;&nbsp;&nbsp;&nbsp;<div>${person}</div>
+
  
   <button onclick="
       todoList.splice(${i}, 1);

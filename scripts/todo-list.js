@@ -18,7 +18,7 @@ for (let i = 0; i < todoList.length; i++) {
   <div>${name}</div>
   <div>${dueDate}</div>
   <div>${dueTime}</div>
-  For: <div>${person}</div>
+  For: &nbsp;&nbsp;&nbsp;&nbsp;<div>${person}</div>
 
   <input type="checkbox">
  

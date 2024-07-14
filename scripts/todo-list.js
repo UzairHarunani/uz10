@@ -62,6 +62,7 @@ localStorage.setItem('todolist', JSON.stringify(todoList));
   nameInputElement.value = '';
   dateInputElement.value = '';
   timeInputElement.value = '';
+  personInputElement.value = '';
 
   
   renderTodoList();

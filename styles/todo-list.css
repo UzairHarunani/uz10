@@ -4,7 +4,7 @@ body {
 
 .todo-input-grid {
   display: grid;
-  grid-template-columns: 200px 150px 20px 130px 100px 90px;
+  grid-template-columns: 200px 150px 30px 130px 100px 90px;
   column-gap: 10px;
   row-gap: 10px;
   align-items: center;
@@ -12,7 +12,7 @@ body {
 
 .todo-grid {
   display: grid;
-  grid-template-columns: 200px 150px 20px 130px 100px 90px;
+  grid-template-columns: 200px 150px 30px 130px 100px 90px;
   column-gap: 10px;
   row-gap: 10px;
   align-items: center;

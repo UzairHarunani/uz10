@@ -1,7 +1,3 @@
-
-
-
-
 let todoList = [];
 
 renderTodoList();

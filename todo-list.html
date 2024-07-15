@@ -16,7 +16,6 @@
     <input type="date"
       class="js-date-input due-date-input" onkeydown="
       handleCostKeydown(event);
-      handleTodoKeydown(event)
     ">
       <input type="time"
       class="js-time-input due-time-input" onkeydown="
@@ -25,6 +24,7 @@
       
     <button onclick="
     addTodo();
+    emptyValue();
     " class="add-todo-button">Add</button>
     </div>
 

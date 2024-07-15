@@ -62,7 +62,7 @@ localStorage.setItem('todolist', JSON.stringify(todoList));
 
 function emptyValue() {
   if (dateInputElement.value === '') {
-      dateInputElement.value === 'Everyday';
+      dateInputElement.value = 'Everyday';
   }
 };
 

@@ -28,6 +28,12 @@ for (let i = 0; i < todoList.length; i++) {
   todoListHTML += html;
 }
 
+  function emptyValue() {
+    if (dateInputElement.value === '') {
+      document.querySelector('.js-todo-list').innerHTML = 'Everyday';
+    }
+  }
+
 
 document.querySelector('.js-todo-list')
 .innerHTML = todoListHTML;

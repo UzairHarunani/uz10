@@ -27,6 +27,9 @@ for (let i = 0; i < todoList.length; i++) {
   `;
   todoListHTML += html;
 }
+document.querySelector('.js-todo-list')
+.innerHTML = todoListHTML;
+};
 
   function emptyValue() {
     if (dateInputElement.value === '') {
@@ -34,16 +37,14 @@ for (let i = 0; i < todoList.length; i++) {
     }
   }
 
-
-document.querySelector('.js-todo-list')
-.innerHTML = todoListHTML;
-}
 function addTodo() {
   const nameInputElement = document.querySelector('.js-name-input');
   const name = nameInputElement.value;
 
   const dateInputElement = document.querySelector('.js-date-input');
   const dueDate = dateInputElement.value;
+
+  emptyValue();
 
   const timeInputElement = document.querySelector('.js-time-input');
   const dueTime = timeInputElement.value;

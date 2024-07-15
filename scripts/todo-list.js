@@ -44,6 +44,8 @@ function addTodo() {
   const dateInputElement = document.querySelector('.js-date-input');
   const dueDate = dateInputElement.value;
 
+  emptyValue();
+
   const timeInputElement = document.querySelector('.js-time-input');
   const dueTime = timeInputElement.value;
 

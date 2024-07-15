@@ -34,8 +34,8 @@ document.querySelector('.js-todo-list')
 function emptyValue() {
   if (dateInputElement.value === '') {
       dateInputElement.value === 'Everyday';
-  };
-}
+  }
+};
 
 function addTodo() {
   const nameInputElement = document.querySelector('.js-name-input');

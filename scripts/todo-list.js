@@ -61,6 +61,6 @@ localStorage.setItem('todolist', JSON.stringify(todoList));
 function handleCostKeydown(event) {
   if (event.key === 'Enter') {
     addTodo();
-    todoList.splice(${i}, 0);
+    todoList.splice(i, 0);
   }
 };

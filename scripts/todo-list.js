@@ -31,6 +31,12 @@ document.querySelector('.js-todo-list')
 .innerHTML = todoListHTML;
 };
 
+function emptyValue() {
+  if (dateInputElement.value === '') {
+      dateInputElement.value === 'Everyday';
+  };
+}
+
 function addTodo() {
   const nameInputElement = document.querySelector('.js-name-input');
   const name = nameInputElement.value;
@@ -61,6 +67,5 @@ localStorage.setItem('todolist', JSON.stringify(todoList));
 function handleCostKeydown(event) {
   if (event.key === 'Enter') {
     addTodo();
-    todoList.splice(i, 0);
   }
 };

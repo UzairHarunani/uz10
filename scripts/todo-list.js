@@ -60,12 +60,6 @@ localStorage.setItem('todolist', JSON.stringify(todoList));
   renderTodoList();
 };
 
-function emptyValue() {
-  if (dateInputElement.value === '') {
-      dateInputElement.value = 'Everyday';
-  }
-};
-
 function handleCostKeydown(event) {
   if (event.key === 'Enter') {
     addTodo();

@@ -43,16 +43,19 @@ function addTodo() {
 
   if (!dateInputElement.value) {
       dueDate =  'Everyday';     
-    }
-  
-  todoList.push({
+    };
+
+    if (!nameInputElement.value) {
+      alert('Please put a To do name');     
+    } else{
+    todoList.push({
     //name: name,
     //dueDate: dueDate,
     name,
     dueDate,
     dueTime,
       });
-  
+    }
 localStorage.setItem('todolist', JSON.stringify(todoList));
       
   nameInputElement.value = '';

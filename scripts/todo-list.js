@@ -36,13 +36,15 @@ function addTodo() {
   const name = nameInputElement.value;
 
   const dateInputElement = document.querySelector('.js-date-input');
-  const dueDate = dateInputElement.value;
-
-  emptyValue();
+  let dueDate = dateInputElement.value;
 
   const timeInputElement = document.querySelector('.js-time-input');
   const dueTime = timeInputElement.value;
 
+  if (!dateInputElement.value) {
+      dueDate =  'Everyday';     
+    }
+  
   todoList.push({
     //name: name,
     //dueDate: dueDate,

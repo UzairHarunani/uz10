@@ -45,9 +45,13 @@ function addTodo() {
       dueDate =  'Everyday';     
     };
 
+    if (!timeInputElement.value) {
+      dueTime =  'Any time';     
+    };
+
     if (!nameInputElement.value) {
       alert('Please put a To do name');     
-    } else{
+    } else {
     todoList.push({
     //name: name,
     //dueDate: dueDate,

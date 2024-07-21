@@ -39,7 +39,7 @@ function addTodo() {
   let dueDate = new Date(dateInputElement.value).toLocaleDateString("en-GB");
 
   const timeInputElement = document.querySelector('.js-time-input');
-  const dueTime = timeInputElement.value;
+  let dueTime = timeInputElement.value;
 
   if (!dateInputElement.value) {
       dueDate =  'Everyday';     

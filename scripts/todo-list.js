@@ -36,7 +36,7 @@ function addTodo() {
   const name = nameInputElement.value;
 
   const dateInputElement = document.querySelector('.js-date-input');
-  let dueDate = dateInputElement.value;
+  let dueDate = dateInputElement.value.toLocaleDateString();
 
   const timeInputElement = document.querySelector('.js-time-input');
   const dueTime = timeInputElement.value;

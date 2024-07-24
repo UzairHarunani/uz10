@@ -72,7 +72,7 @@ let check = document.querySelector('js-finish');
          if ( checkbox.checked ) {
             localStorage.setItem('checkbox', JSON.stringify(check));
          }
-        )
+})
   
 localStorage.setItem('todolist', JSON.stringify(todoList));
   

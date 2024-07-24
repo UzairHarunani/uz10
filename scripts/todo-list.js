@@ -10,7 +10,7 @@ let todoListHTML = '';
   };
 
     if (localStorage.getItem('checkbox') !== null) {
-     todoList = JSON.parse(localStorage.getItem('checkbox'));
+     check = JSON.parse(localStorage.getItem('checkbox'));
   }
 
 for (let i = 0; i < todoList.length; i++) {
@@ -67,7 +67,7 @@ function addTodo() {
       });
     };
 
- const check = document.querySelector('js-finish');
+ let check = document.querySelector('js-finish');
   
 localStorage.setItem('todolist', JSON.stringify(todoList));
 localStorage.setItem('checkbox', JSON.stringify(check));

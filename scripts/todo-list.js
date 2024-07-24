@@ -7,6 +7,10 @@ let todoListHTML = '';
 
   if (localStorage.getItem('todolist') !== null) {
      todoList = JSON.parse(localStorage.getItem('todolist'));
+  };
+
+    if (localStorage.getItem('checkbox') !== null) {
+     todoList = JSON.parse(localStorage.getItem('checkbox'));
   }
 
 for (let i = 0; i < todoList.length; i++) {
@@ -18,6 +22,8 @@ for (let i = 0; i < todoList.length; i++) {
   <div>${name}</div>
   <div>${dueDate}</div>
   <div>${dueTime}</div>
+
+  <input type="checkbox" class="js-finish">
   
   <button onclick="
       todoList.splice(${i}, 1);
@@ -59,8 +65,12 @@ function addTodo() {
     dueDate,
     dueTime,
       });
-    }
+    };
+
+ const check = document.querySelector('js-finish');
+  
 localStorage.setItem('todolist', JSON.stringify(todoList));
+localStorage.setItem('checkbox', JSON.stringify(check));
       
   nameInputElement.value = '';
   dateInputElement.value = '';

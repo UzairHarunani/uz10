@@ -71,7 +71,8 @@ let check = document.querySelector('js-finish');
       check.addEventListener( "change", () => {
          if ( check.checked && check !== null ) {
             localStorage.setItem('checkbox', JSON.stringify(check));
-})
+}
+      })
   
 localStorage.setItem('todolist', JSON.stringify(todoList));
   

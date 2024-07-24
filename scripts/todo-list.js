@@ -67,11 +67,15 @@ function addTodo() {
       });
     };
 
- let check = document.querySelector('js-finish');
+let check = document.querySelector('js-finish');
+      checkbox.addEventListener( "change", () => {
+         if ( checkbox.checked ) {
+            localStorage.setItem('checkbox', JSON.stringify(check));
+         }
+        );
   
 localStorage.setItem('todolist', JSON.stringify(todoList));
-localStorage.setItem('checkbox', JSON.stringify(check));
-      
+  
   nameInputElement.value = '';
   dateInputElement.value = '';
   timeInputElement.value = '';

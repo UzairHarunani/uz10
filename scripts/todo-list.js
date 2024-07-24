@@ -68,8 +68,8 @@ function addTodo() {
     };
 
 let check = document.querySelector('js-finish');
-      checkbox.addEventListener( "change", () => {
-         if ( checkbox.checked ) {
+      check.addEventListener( "change", () => {
+         if ( check.checked ) {
             localStorage.setItem('checkbox', JSON.stringify(check));
          }
 })

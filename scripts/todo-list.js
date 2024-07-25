@@ -1,3 +1,21 @@
+/*
+document.addEventListener('DOMContentLoaded', (event) => {
+    const checkbox = document.getElementById('myCheckbox');
+
+    // Retrieve the state from localStorage and set the checkbox accordingly
+    const isChecked = localStorage.getItem('checkboxState') === 'true';
+    checkbox.checked = isChecked;
+
+    // Add event listener to the checkbox
+    checkbox.addEventListener('change', function() {
+        // Save the state to localStorage
+        localStorage.setItem('checkboxState', checkbox.checked);
+    });
+});
+*/
+
+
+
 let todoList = [];
 
 renderTodoList();
@@ -8,10 +26,6 @@ let todoListHTML = '';
   if (localStorage.getItem('todolist') !== null) {
      todoList = JSON.parse(localStorage.getItem('todolist'));
   };
-
-    if (localStorage.getItem('checkbox') !== null) {
-     check = JSON.parse(localStorage.getItem('checkbox'));
-  }
 
 for (let i = 0; i < todoList.length; i++) {
   const todoObject = todoList[i];
@@ -66,21 +80,27 @@ function addTodo() {
     dueTime,
       });
     };
-
-let check = document.querySelector('js-finish');
-      check.addEventListener( "change", () => {
-         if ( check.checked && check !== null ) {
-            localStorage.setItem('checkbox', JSON.stringify(check));
-}
-      })
-  
-localStorage.setItem('todolist', JSON.stringify(todoList));
-  
+ 
   nameInputElement.value = '';
   dateInputElement.value = '';
   timeInputElement.value = '';
   
   renderTodoList();
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const checkbox = document.querySelector('myCheckbox');
+
+    // Retrieve the state from localStorage and set the checkbox accordingly
+    const isChecked = localStorage.getItem('checkboxState') === 'true';
+    checkbox.checked = isChecked;
+
+    // Add event listener to the checkbox
+    checkbox.addEventListener('change', function() {
+        // Save the state to localStorage
+        localStorage.setItem('checkboxState', checkbox.checked);
+    });
+});
+  
 };
 
 function handleCostKeydown(event) {

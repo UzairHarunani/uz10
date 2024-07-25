@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 */
 
-
-
 let todoList = [];
 
 renderTodoList();
@@ -80,6 +78,8 @@ function addTodo() {
     dueTime,
       });
     };
+
+    localStorage.setItem('todolist', JSON.stringify(todoList));
  
   nameInputElement.value = '';
   dateInputElement.value = '';
@@ -88,7 +88,7 @@ function addTodo() {
   renderTodoList();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const checkbox = document.querySelector('myCheckbox');
+    const checkbox = document.querySelector('js-finish');
 
     // Retrieve the state from localStorage and set the checkbox accordingly
     const isChecked = localStorage.getItem('checkboxState') === 'true';

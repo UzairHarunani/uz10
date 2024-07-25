@@ -45,22 +45,7 @@ for (let i = 0; i < todoList.length; i++) {
   `;
   todoListHTML += html;
 }
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    const checkbox = document.querySelector('js-finish');
-
-    // Retrieve the state from localStorage and set the checkbox accordingly
-    const isChecked = localStorage.getItem('checkboxState') === 'true';
-    checkbox.checked = isChecked;
-
-    // Add event listener to the checkbox
-    checkbox.addEventListener('change', function() {
-        // Save the state to localStorage
-        localStorage.setItem('checkboxState', checkbox.checked);
-    });
-});
-
-    
+   
 document.querySelector('.js-todo-list')
 .innerHTML = todoListHTML;
 };
@@ -100,7 +85,22 @@ function addTodo() {
   nameInputElement.value = '';
   dateInputElement.value = '';
   timeInputElement.value = '';
-  
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const checkbox = document.getElementById('myCheckbox');
+
+    // Retrieve the state from localStorage and set the checkbox accordingly
+    const isChecked = localStorage.getItem('checkboxState') === 'true';
+    checkbox.checked = isChecked;
+
+    // Add event listener to the checkbox
+    checkbox.addEventListener('change', function() {
+        // Save the state to localStorage
+        localStorage.setItem('checkboxState', checkbox.checked);
+    });
+});
+
+    
   renderTodoList();  
 };
 

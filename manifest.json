@@ -10,17 +10,12 @@
 	"icons":[
 	{
 	"src":"me.jpg",					 
-	"sizes":"192x192",
+	"sizes":"275x183",
 	"type":"image/jpg"
 	},
 	{
 	"src":"imgs/Rock-emoji.png",
-	"sizes":"512x512",
-	"type":"image/png"
-	},
-	{
-	"src":"imgs/Paper-emoji.png",
-	"sizes":"512x512",
+	"sizes":"250x250",
 	"type":"image/png"
 	}
 ]

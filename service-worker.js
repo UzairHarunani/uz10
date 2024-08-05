@@ -2,10 +2,10 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('my-pwa-cache').then(cache => {
       return cache.addAll([
-        '/',
-        '/azu.html',
-        '/me.jpg',
-        '/Rock-emoji.png'
+        '/uz10',
+        '/uz10/azu.html',
+        '/uz10/me.jpg',
+        '/uz10/imgs/Rock-emoji.png'
       ]);
     })
   );

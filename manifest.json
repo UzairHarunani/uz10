@@ -1,7 +1,7 @@
 {
 	"name":"PWA Tutorial",
 	"short_name":"PWA",
-	"start_url":"index.html",
+	"start_url":"azu.html",
 	"display":"standalone",
 	"background_color":"#5900b3",
 	"theme_color":"black",
@@ -9,17 +9,17 @@
 	"description":"This is a PWA tutorial.",
 	"icons":[
 	{
-	"src":"images/RX.jfif",					 
+	"src":"me.jpg",					 
 	"sizes":"192x192",
-	"type":"image/jfif"
+	"type":"image/jpg"
 	},
 	{
-	"src":"images/Screenshot (1).png",
+	"src":"imgs/Rock-emoji.png",
 	"sizes":"512x512",
 	"type":"image/png"
 	},
 	{
-	"src":"images/Screenshot (2).png",
+	"src":"imgs/Paper-emoji.png",
 	"sizes":"512x512",
 	"type":"image/png"
 	}

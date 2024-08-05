@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>hiAZU</title>
+
+<link rel="manifest" href="manifest.json">
+
 </head>
 
 <body bgcolor=#167BCA>
@@ -164,5 +167,18 @@ For more information please contact 0756444350.
 <a href="Bears.html">Brown Bears</a>
 <a href="index.html">Uzair</a>
 <a href="Uzairs Help.html">Uzair's Help</a>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+  }
+</script>
+
 </body>
 </html>

@@ -1,8 +1,7 @@
 const CACHE_NAME = 'your-cache-name-v1';
 const urlsToCache = [
-  '/uz10',
   '/uz10/azu.html',
-  '/offline.html' // Add offline.html to the cache list
+  '/uz10/offline.html' // Add offline.html to the cache list
 ];
 
 // Install the service worker

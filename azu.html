@@ -9,6 +9,9 @@
 
 <body bgcolor=#167BCA>
 <h1 align=center style="color:#f33513"><img align="center" src="https://uzairharunani.github.io/uz10/azu-high-resolution-logo (1).png" height="100px" width="140px"/> AZU</h1>
+
+<button id="installButton" style="display:none;">Install PWA</button>
+
 <table width=100%>
 <tr>
 <td width=35%>
@@ -168,17 +171,37 @@ For more information please contact 0756444350.
 <a href="index.html">Uzair</a>
 <a href="Uzairs Help.html">Uzair's Help</a>
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/uz10/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.log('Service Worker registration failed:', error);
-      });
-  }
-</script>
+    <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can install the PWA
+            showInstallPromotion();
+        });
+
+        function showInstallPromotion() {
+            // Display your UI to promote the installation
+            const installButton = document.getElementById('installButton');
+            installButton.style.display = 'block';
+            installButton.addEventListener('click', () => {
+                // Show the install prompt
+                deferredPrompt.prompt();
+                // Wait for the user to respond to the prompt
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    } else {
+                        console.log('User dismissed the install prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>

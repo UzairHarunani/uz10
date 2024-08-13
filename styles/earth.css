@@ -1,0 +1,20 @@
+body{
+  background-color: rgb(50, 204, 30);
+  color: rgb(58, 12, 71);
+}
+
+.heading {
+  color: rgb(17, 52, 128);
+  font-family: Algerian;
+}
+
+.second{
+  font-family: Berlin Sans FB;
+  font-size: 28px;
+}
+
+.list{
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-family: Arial;
+}

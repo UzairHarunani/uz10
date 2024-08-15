@@ -18,3 +18,13 @@ body{
   font-size: 20px;
   font-family: Arial;
 }
+
+.sources{
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.under{
+  color: rgb(17, 52, 128);
+}

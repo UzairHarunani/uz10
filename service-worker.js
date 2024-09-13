@@ -1,6 +1,6 @@
 const CACHE_NAME = 'your-cache-name-v1';
 const urlsToCache = [
-  '/uz10/azu.html',
+  '/uz10/rps.html',
   '/uz10/offline.html' // Add offline.html to the cache list
 ];
 

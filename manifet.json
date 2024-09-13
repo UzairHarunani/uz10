@@ -10,7 +10,7 @@
 	"icons":[
 	{
 	"src":"imgs/Paper-emoji.png",					 
-	"sizes":"275x183",
+	"sizes":"250x250",
 	"type":"image/jpg"
 	},
 	{
@@ -22,13 +22,13 @@
 "screenshots": [
 	{
 		"src": "images/Screenshot 2024-09-13 070340.jpg",
-		"sizes": "1366x768",
+		"sizes": "1299x624",
 		"type": "image/png",
 		"form_factor": "wide"
 	},
 	{
 		"src": "images/Screenshot 2024-09-13 070340.jpg",
-		"sizes": "1366x768",
+		"sizes": "1299x624",
 		"type": "image/png"
 	}
 ]

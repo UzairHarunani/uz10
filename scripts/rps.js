@@ -38,8 +38,22 @@ function autoPlay() {
   } else {
     buttonElement.innerHTML = 'Auto Play';
   }
-  
 }
+
+document.querySelector('.scissors-button')
+  .addEventListener('cilck', () => {
+    playGame('Scissors');
+  });
+
+  document.querySelector('.rock-button')
+  .addEventListener('cilck', () => {
+    playGame('Rock');
+  });
+
+  document.querySelector('.paper-button')
+  .addEventListener('cilck', () => {
+    playGame('paper');
+  });
 
 document.body.addEventListener('keydown', (event) => {
   if (event.key === 'r') {

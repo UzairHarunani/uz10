@@ -1,7 +1,6 @@
 const CACHE_NAME = 'your-cache-name-v1';
 const urlsToCache = [
   '/uz10/rps.html',
-  '/uz10/offline.html' // Add offline.html to the cache list
 ];
 
 // Install the service worker
@@ -51,7 +50,7 @@ self.addEventListener('fetch', event => {
               });
             return networkResponse;
           }
-        ).catch(() => caches.match('/uz10/offline.html'));
+        ).catch(() => caches.match('/uz10/azu.html'));
       })
   );
 });

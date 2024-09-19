@@ -1,16 +1,16 @@
 {
-	"name":"PWA Tutorial",
-	"short_name":"PWA",
-	"start_url":"azu.html",
+	"name":"Rock Paper Scissors",
+	"short_name":"RPS",
+	"start_url":"rps.html",
 	"display":"standalone",
 	"background_color":"#5900b3",
 	"theme_color":"black",
 	"scope": ".",
-	"description":"This is a PWA tutorial.",
+	"description":"You can play Rock Paper Scissors against computer.",
 	"icons":[
 	{
-	"src":"me.jpg",					 
-	"sizes":"275x183",
+	"src":"imgs/Paper-emoji.png",					 
+	"sizes":"250x250",
 	"type":"image/jpg"
 	},
 	{
@@ -21,14 +21,14 @@
 ],
 "screenshots": [
 	{
-		"src": "images/Screenshot 2024-09-09 145513.jpg",
-		"sizes": "1366x768",
+		"src": "images/Screenshot 2024-09-13 070340.jpg",
+		"sizes": "1299x624",
 		"type": "image/png",
 		"form_factor": "wide"
 	},
 	{
-		"src": "images/Screenshot 2024-09-09 145513.jpg",
-		"sizes": "1366x768",
+		"src": "images/Screenshot 2024-09-13 070340.jpg",
+		"sizes": "1299x624",
 		"type": "image/png"
 	}
 ]

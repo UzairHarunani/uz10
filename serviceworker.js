@@ -1,6 +1,8 @@
 const CACHE_NAME = 'your-cache-name-v1';
 const urlsToCache = [
   '/uz10/rps.html',
+  '/uz10/rps.css',
+  '/uz10/rps.js'
 ];
 
 // Install the service worker

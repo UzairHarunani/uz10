@@ -40,7 +40,7 @@ self.addEventListener('fetch', event => {
         }
         return fetch(event.request).then(
           networkResponse => {
-            if (!networkResponse || networkResponssidere.status !== 200 || networkResponse.type !== 'basic') {
+            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
               return networkResponse;
             }
             const responseToCache = networkResponse.clone();

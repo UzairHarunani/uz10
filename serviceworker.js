@@ -1,11 +1,10 @@
-const CACHE_NAME = 'your-cache-name-v1';
+const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
-  '/uz10/rps.html',
-  '/uz10/rps.css',
-  '/uz10/rps.js'
+  '/rps.html',
+  '/rps.css',
+  '/rps.js'
 ];
 
-// Install the service worker
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -16,43 +15,31 @@ self.addEventListener('install', event => {
   );
 });
 
-// Activate the service worker
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        // Return cached response if available, otherwise fetch from network
+        return response || fetch(event.request);
+      }).catch(() => {
+        // If both fail, show a fallback offline page
+        return caches.match('/rps.html');
+      })
+  );
+});
+
+// Activate event to delete old caches
 self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
       );
     })
-  );
-});
-
-// Fetch event handler
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request).then(
-          networkResponse => {
-            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-              return networkResponse;
-            }
-            const responseToCache = networkResponse.clone();
-            caches.open(CACHE_NAME)
-              .then(cache => {
-                cache.put(event.request, responseToCache);
-              });
-            return networkResponse;
-          }
-        ).catch(() => caches.match('/uz10/rps.html'));
-      })
   );
 });
